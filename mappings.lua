@@ -20,9 +20,12 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<C-\\>"] = {"<cmd>ToggleTerm<cr>"},
+    ["<leader><leader>w"] = {"<cmd>HopWord<cr>"},
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+    ["<C-\\>"] = {"<cmd>ToggleTerm<cr>"},
   },
 }
