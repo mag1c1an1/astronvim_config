@@ -10,15 +10,15 @@ return {
   --   end,
   -- },
   {
-    'Yazeed1s/oh-lucy.nvim'
+    'tanvirtin/monokai.nvim'
   },
   {
-   'phaazon/hop.nvim',
+    'phaazon/hop.nvim',
     version = 'v2', -- optional but strongly recommended
-    lazy = false, 
+    lazy = false,
     config = function()
       -- you can configure Hop the way you like here; see :h hop-config
-      require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+      require 'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
     end
   },
   {
@@ -26,10 +26,10 @@ return {
     version = "*", -- Use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
     config = function()
-        require("nvim-surround").setup({
-            -- Configuration here, or leave empty to use defaults
-        })
+      require("nvim-surround").setup({
+        -- Configuration here, or leave empty to use defaults
+      })
     end
   },
-  {"p00f/clangd_extensions.nvim"},   
+  -- {"p00f/clangd_extensions.nvim"},
 }
