@@ -12,6 +12,7 @@ return {
   {
     'tanvirtin/monokai.nvim'
   },
+  { 'luisiacc/gruvbox-baby' },
   {
     'phaazon/hop.nvim',
     version = 'v2', -- optional but strongly recommended
