@@ -16,7 +16,8 @@ return {
   {
     'phaazon/hop.nvim',
     version = 'v2', -- optional but strongly recommended
-    lazy = false,
+    --lazy = false,
+    event = "VeryLazy",
     config = function()
       -- you can configure Hop the way you like here; see :h hop-config
       require 'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
@@ -33,4 +34,11 @@ return {
     end
   },
   -- {"p00f/clangd_extensions.nvim"},
+  {
+    "ggandor/leap.nvim",
+    event = "VeryLazy",
+    config = function()
+      require('leap').add_default_mappings()
+    end
+  },
 }
